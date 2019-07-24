@@ -12,7 +12,7 @@ after_success:
   - docker build -t jbrightstores/multi-client ./client
   - docker build -t jbrightstores/multi-server ./server
   - docker build -t jbrightstores/multi-worker ./worker
-  - docker built -t jbrightstores/multi-nginx ./nginx
+  - docker build -t jbrightstores/multi-nginx ./nginx
 
   # login to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
